@@ -26,8 +26,8 @@ public class AttrController {
     }
 
     @GetMapping(value = "/attrInfoList")
-    public List<PmsBaseAttrInfo> getBaseAttrInfo(String catalog3Id){
-        return attrService.getBaseAttrInfo(catalog3Id);
+    public List<PmsBaseAttrInfo> getBaseAttrInfoList(String catalog3Id){
+        return attrService.getBaseAttrInfoList(catalog3Id);
     }
 
     @PostMapping("/saveAttrInfo")

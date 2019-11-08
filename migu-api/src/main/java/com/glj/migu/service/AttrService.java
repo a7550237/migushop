@@ -9,7 +9,7 @@ import java.util.List;
 public interface AttrService {
     List<PmsBaseSaleAttr> getBaseSaleAttrList();
 
-    List<PmsBaseAttrInfo> getBaseAttrInfo(String catalog3Id);
+    List<PmsBaseAttrInfo> getBaseAttrInfoList(String catalog3Id);
 
     String saveAttrInfo(PmsBaseAttrInfo pmsBaseAttrInfo);
 

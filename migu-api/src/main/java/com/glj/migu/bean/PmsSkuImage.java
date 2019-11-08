@@ -19,7 +19,7 @@ public class PmsSkuImage implements Serializable {
     String imgName;
     @Column
     String imgUrl;
-    @Column
+    @Column(name = "product_img_id")
     String spuImgId;
     @Column
     String isDefault;
