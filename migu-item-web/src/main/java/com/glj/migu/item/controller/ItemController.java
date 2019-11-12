@@ -8,6 +8,9 @@ import com.glj.migu.bean.PmsSkuSaleAttrValue;
 import com.glj.migu.service.SkuService;
 import com.glj.migu.service.SpuService;
 import java.util.Map;
+
+import io.jsonwebtoken.JwtBuilder;
+import io.jsonwebtoken.Jwts;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -62,7 +65,6 @@ public class ItemController {
         // 将sku的销售属性hash表放到页面
         String skuSaleAttrHashJsonStr = JSON.toJSONString(skuSaleAttrHash);
         map.put("skuSaleAttrHashJsonStr",skuSaleAttrHashJsonStr);
-
 
         return "item";
     }

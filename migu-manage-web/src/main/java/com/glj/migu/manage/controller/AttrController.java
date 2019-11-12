@@ -27,13 +27,13 @@ public class AttrController {
 
     @GetMapping(value = "/attrInfoList")
     public List<PmsBaseAttrInfo> getBaseAttrInfoList(String catalog3Id){
+
         return attrService.getBaseAttrInfoList(catalog3Id);
     }
 
     @PostMapping("/saveAttrInfo")
     public String saveAttrInfo(@RequestBody PmsBaseAttrInfo pmsBaseAttrInfo){
         attrService.saveAttrInfo(pmsBaseAttrInfo);
-
         return "success";
     }
 
