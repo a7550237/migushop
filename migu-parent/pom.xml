@@ -22,7 +22,7 @@
 
 
         <fastJson.version>1.2.58</fastJson.version>
-        <dubbo.version>2.6.2</dubbo.version>
+        <dubbo.version>2.6.12</dubbo.version>
         <druid.version>1.1.13</druid.version>
         <tk.mybatis.version>2.1.5</tk.mybatis.version>
         <mybatis.version>2.1.0</mybatis.version>
